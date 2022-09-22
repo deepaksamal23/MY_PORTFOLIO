@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="stylesheet" href="../css/style.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+      <title>My_Portfolio</title>
+</head>
+<body>
+      <header id="header_wrapper">
+            <nav>
+                  <div class="logo">
+                        <img src="../images/dark.png" alt="">
+                  </div>
+                  <ul class="menu">
+                        <li><a href="/" >Home</a></li>
+                        <li><a href="./about.html" >About</a></li>
+                        <li><a href="./portfolio.html" >Portfolio</a></li>
+                        <!-- <li> <a href="./service.html" >Service</a> </li>
+                        <li> <a href="./news.html" >News</a> </li> -->
+                        <li> <a href="./contact.html" class="menu_high">Contact</a> </li>
+                  </ul>
+              
+            </nav>
+      </header>
+      
+      <section class="about_wrapper">
+            <div class="row_about">
+              <div class="left__about">
+                <img src="../images/img2.png" alt="" />
+              </div>
+              <div class="right_about">
+                <h1 class="text_contact" style="color:brown  ;">GET IN TOUCH</h1>
+                        <div class="work_list">
+                     <form  onsubmit="return datalick()">
+                        <input type="text" id="name" placeholder="Name" value="">
+                        <p id="namedata"></p>
+                        <input type="email" id="email" placeholder="Email" value="">
+                        <p id="emaildata"></p>
+                        <textarea  id="message" cols="30" rows="10" ></textarea>
+                        <button type="submit"  onclick="dataclick1()" class="btn">Send Message</button>
+                     </form>
+                        
+                        </div>
+              </div>
+            </div>
+          </section>
+
+          <footer class="footer">
+            <div class="footer_container">
+                  <div class="footer_text">
+                        Copyright © 2022
+                  </div>
+                  <div class="footer_logo">
+                       <span><i class="fa-brands fa-facebook-f"></i></span> 
+                 <span><i class="fa-brands fa-twitter"></i></span>
+                 <span><i class="fa-brands fa-instagram"></i></span>
+                  </div>
+            </div>
+          </footer>
+
+      <script>
+                              function  dataclick1(){
+                                    var a=document.getElementById("name").value
+                                    var b=document.getElementById("email").value
+                                    var c=document.getElementById("message").value
+
+                                    // alert("Your Full Name:"+a+"\n  Your Email Id:"+b+"\n Your Message:"+c)
+
+                                    if(a==""){
+                                          document.getElementById('namedata').innerHTML="***please enter full name"
+                                    }else if(b==""){
+                                          document.getElementById('emaildata').innerHTML="***please enter your email"
+                                    }
+                              }
+      </script>
+</body>
+</html>

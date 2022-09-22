@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>My_Portfolio</title>
+  </head>
+
+  <body>
+    <header id="header_wrapper">
+      <nav>
+        <div class="logo">
+          <img src="../images/dark.png" alt="" class="img_size" />
+        </div>
+        <ul class="menu">
+          <li><a href="/">Home</a></li>
+          <li><a href="./about.html" class="menu_high">About</a></li>
+          <li><a href="./portfolio.html">Portfolio</a></li>
+          <!-- <li><a href="./service.html">Service</a></li>
+          <li><a href="./news.html">News</a></li> -->
+          <li><a href="./contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <section class="about_wrapper">
+      <div class="row_about">
+        <div class="left__about">
+          <img src="../images/img2.png" alt="" />
+        </div>
+        <div class="right_about">
+          <h1 class="text_about">About Me</h1>
+          <p class="sub_text">
+        Looking to start the career as an entry-level Web developer. I would like to be a part of an organization where I could use and enhance my knowledge and talent for the development of both the organization and myself.  Skilled in developing and designing multiple web-based applications incorporating a range of technologies.
+
+          </p>
+          <div class="ex_title">
+            <p class="tabs_link active_link" onclick="openTab('skills')">
+              Skills
+            </p>
+            <p class="tabs_link" onclick="openTab('experience')">Experience</p>
+            <p class="tabs_link" onclick="openTab('education')">Education</p>
+            <p class="tabs_link" onclick="openTab('service')">Services</p>
+            <p class="tabs_link" onclick="openTab('program')">Programming</p>
+          </div>
+          <div class="expert active_data" id="skills">
+            <ul>
+              <li><span>UI/UX</span><br />Web Designing/Designing UI</li>
+              <li><span>Web Development</span><br />Web App Development</li>
+            </ul>
+          </div>
+          <div class="expert" id="experience">
+            <ul>
+              <li><span>Experience :</span><br />I am a Fresher</li>
+            </ul>
+          </div>
+          <div class="expert" id="education">
+            <ul>
+              <li><span>2013-2015</span><br />+2 Science From Xavier Jajpur</li>
+              <li><span>2015-2018</span><br />Msc from DD College Keonjhar</li>
+              <li><span>2018-2021</span><br />MCA from Ravenshaw University</li>
+            </ul>
+          </div>
+          <div class="expert" id="service">
+            <ul class="data_service">
+              <li>Web Development</li>
+              <li>Landing Page</li>
+              <li>Web Hosting</li>
+            </ul>
+          </div>
+          <div class="expert" id="program">
+            <div class="bio_progresss">
+              <div class="bio_data">
+                <h3>HTML</h3>
+                <div class="bar">
+                  <span>85%</span>
+                </div>
+              </div>
+              <div class="bio_data">
+                <h3>JavaScript</h3>
+                <div class="bar bar-2">
+                  <span>70%</span>
+                </div>
+              </div>
+              <div class="bio_data">
+                <h3>CSS</h3>
+                <div class="bar bar-3">
+                  <span>75%</span>
+                </div>
+              </div>
+              <div class="bio_data">
+                <h3>ReactJs</h3>
+                <div class="bar bar-4">
+                  <span>84%</span>
+                </div>
+              </div>
+              <div class="bio_data">
+                <h3>Node Js</h3>
+                <div class="bar bar-5">
+                  <span>65%</span>
+                </div>
+              </div>
+              <div class="bio_data">
+                <h3>Express Js</h3>
+                <div class="bar bar-6">
+                  <span>60%</span>
+                </div>
+              </div>
+              <div class="bio_data">
+                <h3>Mongo DB</h3>
+                <div class="bar bar-7">
+                  <span>78%</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="footer_container">
+            <div class="footer_text">
+                  Copyright © 2022
+            </div>
+            <div class="footer_logo">
+                 <span><i class="fa-brands fa-facebook-f"></i></span> 
+           <span><i class="fa-brands fa-twitter"></i></span>
+           <span><i class="fa-brands fa-instagram"></i></span>
+            </div>
+      </div>
+    </footer>
+
+    <script>
+      var tablinks = document.getElementsByClassName("tabs_link");
+
+      var experts = document.getElementsByClassName("expert");
+
+      function openTab(tabName) {
+        for (tablink of tablinks) {
+          tablink.classList.remove("active_link");
+        }
+        for (expert of experts) {
+          expert.classList.remove("active_data");
+        }
+        event.currentTarget.classList.add("active_link");
+        document.getElementById(tabName).classList.add("active_data");
+      }
+    </script>
+  </body>
+  <!-- <script src="app.js"></script> -->
+</html>
